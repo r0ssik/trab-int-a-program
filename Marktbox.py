@@ -1,4 +1,7 @@
-estoque = {}  
+estoque = {"Celta": 20000.00,
+          "Astra": 30000.00,
+          "Gol": 45000.00,
+          "Uno": 25000.00}  
 
 def admin(login,senha):
   if login == "adm" and senha == "1234":
