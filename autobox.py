@@ -1,7 +1,7 @@
 estoque = {"Celta": 20000.00,
           "Astra": 30000.00,
           "Gol": 45000.00,
-          "Uno": 25000.00}  
+          "Uno": 25000.00}
 
 def admin(login,senha):
   if login == "adm" and senha == "1234":
@@ -45,7 +45,7 @@ def admin(login,senha):
 def cliente(nomeCliente):
   total_compra = 0
 
-  print(f"Olá, {nomeCliente},", "seja bem-vindo a nossa MarktBox, agora, iremos apresentar os carros que estão disponíveis no estoque!!")
+  print(f"Olá, {nomeCliente},", "seja bem-vindo a nossa AutoBox, agora, iremos apresentar os carros que estão disponíveis no estoque!!")
   while True:
 
     if estoque  == {}:
@@ -91,7 +91,7 @@ def finalizar(total_compra):
         parcela = parcela.capitalize()
 
         if parcela == "Sim":
-          vezes = int(input("Quantas vezes? de 12, 24 ou 36: "))
+          vezes = int(input("Quantas vezes?\n12\n24\n36\n"))
 
           if vezes == 12 or vezes == 24 or vezes == 36:
             total_parcela = total_compra / vezes
